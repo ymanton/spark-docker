@@ -50,8 +50,8 @@ COPY --chown=spark:spark --from=staging /tmp/spark/sbin /opt/spark/sbin/
 COPY --chown=spark:spark --from=staging /tmp/spark/examples /opt/spark/examples/
 #COPY --chown=spark:spark --from=staging /tmp/spark/kubernetes/tests /opt/spark/kubernetes/tests/
 COPY --chown=spark:spark --from=staging /tmp/spark/data /opt/spark/data/
-COPY --chown=spark:spark --from=staging /tmp/spark/python/pyspark /opt/spark/python/pyspark/
-COPY --chown=spark:spark --from=staging /tmp/spark/python/lib /opt/spark/python/lib/
+#COPY --chown=spark:spark --from=staging /tmp/spark/python/pyspark /opt/spark/python/pyspark/
+#COPY --chown=spark:spark --from=staging /tmp/spark/python/lib /opt/spark/python/lib/
 #COPY --chown=spark:spark --from=staging /tmp/spark/R /opt/spark/R/
 
 COPY entrypoint.sh /opt/
