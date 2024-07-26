@@ -33,6 +33,7 @@ RUN groupadd --system --gid=${spark_uid} spark && \
 RUN set -ex; \
     apt-get update; \
     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper; \
+    apt-get install -y less vim linux-tools-common linux-tools-generic; \
     mkdir -p /opt/spark; \
     mkdir /opt/spark/python; \
     mkdir -p /opt/spark/examples; \
